@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://c0h8osktx36e2"]
+
+[ext_resource type="Script" uid="uid://bgpwpqhljlhu6" path="res://battle.gd" id="1_ip7xm"]
+[ext_resource type="Texture2D" uid="uid://iml7phhadjmu" path="res://rpgsprites1/townfolk1_f.png" id="2_oxp8w"]
+[ext_resource type="Texture2D" uid="uid://15cs8sn4ks5r" path="res://gfx/gfx/character.png" id="3_7sfm4"]
+
+[node name="Battle" type="Control" unique_id=1755400233]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ip7xm")
+
+[node name="Background" type="ColorRect" parent="." unique_id=686807031]
+z_index = -10
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 360.0
+color = Color(0.4509804, 0.7254902, 0.47058824, 1)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1955810101]
+visible = false
+layout_mode = 0
+offset_left = 120.0
+offset_top = 200.0
+offset_right = 520.0
+offset_bottom = 340.0
+
+[node name="PromptLabel" type="Label" parent="." unique_id=1580836632]
+z_index = 10
+layout_mode = 0
+offset_left = 410.0
+offset_top = 200.0
+offset_right = 450.0
+offset_bottom = 249.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "TEST
+"
+
+[node name="PlayerHPLabel" type="Label" parent="." unique_id=1793910328]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 265.0
+offset_right = 80.0
+offset_bottom = 288.0
+
+[node name="EnemyHPLabel" type="Label" parent="." unique_id=199106710]
+z_index = 10
+layout_mode = 0
+offset_left = 40.0
+offset_top = 60.0
+offset_right = 80.0
+offset_bottom = 83.0
+
+[node name="ChoiceButton1" type="Button" parent="." unique_id=42202380]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 265.0
+offset_right = 460.0
+offset_bottom = 305.0
+
+[node name="ChoiceButton2" type="Button" parent="." unique_id=1560232638]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 265.0
+offset_right = 580.0
+offset_bottom = 305.0
+
+[node name="ChoiceButton3" type="Button" parent="." unique_id=295628350]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 320.0
+offset_right = 460.0
+offset_bottom = 360.0
+
+[node name="ChoiceButton4" type="Button" parent="." unique_id=1831402499]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 320.0
+offset_right = 580.0
+offset_bottom = 360.0
+
+[node name="ResultLabel" type="Label" parent="." unique_id=395560603]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 330.0
+offset_right = 100.0
+offset_bottom = 353.0
+
+[node name="EnemyBox" type="ColorRect" parent="." unique_id=622580880]
+visible = false
+layout_mode = 0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 260.0
+offset_bottom = 120.0
+
+[node name="PlayerBox" type="ColorRect" parent="." unique_id=454051792]
+visible = false
+layout_mode = 0
+offset_left = 380.0
+offset_top = 170.0
+offset_right = 600.0
+offset_bottom = 250.0
+
+[node name="PlayerNameLabel" type="Label" parent="." unique_id=2004315482]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EnemyNameLabel" type="Label" parent="." unique_id=836250916]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 35.0
+offset_right = 80.0
+offset_bottom = 58.0
+
+[node name="EnemySprite" type="Sprite2D" parent="." unique_id=115259675]
+position = Vector2(360, 110)
+scale = Vector2(3, 3)
+texture = ExtResource("2_oxp8w")
+region_enabled = true
+region_rect = Rect2(34, 74, 28, 32)
+
+[node name="PlayerSprite" type="Sprite2D" parent="." unique_id=662729565]
+position = Vector2(220, 250)
+scale = Vector2(4, 4)
+texture = ExtResource("3_7sfm4")
+region_enabled = true
+region_rect = Rect2(34, 38, 13, 22)
